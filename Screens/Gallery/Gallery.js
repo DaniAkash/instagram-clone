@@ -3,12 +3,15 @@ import React, {
 } from 'react';
 import {
   View,
+  Text,
 } from 'react-native';
 
 class Gallery extends Component {
   render() {
     return (
-      <View></View>
+      <View>
+        <Text>{'Gallery'}</Text>
+      </View>
     );
   }
 }

@@ -1,16 +1,19 @@
 import React, {
-    Component,
+  Component,
 } from 'react';
 import {
-    View,
+  View,
+  Text,
 } from 'react-native';
 
 class Search extends Component {
-    render() {
-        return (
-            <View></View>
-        );
-    }
+  render() {
+    return (
+      <View>
+        <Text>{'Search'}</Text>
+      </View>
+    );
+  }
 }
 
 export default Search;

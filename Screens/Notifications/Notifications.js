@@ -1,16 +1,19 @@
 import React, {
-    Component,
+  Component,
 } from 'react';
 import {
-    View,
+  View,
+  Text,
 } from 'react-native';
 
 class Notifications extends Component {
-    render() {
-        return (
-            <View></View>
-        );
-    }
+  render() {
+    return (
+      <View>
+        <Text>{'Notifications'}</Text>
+      </View>
+    );
+  }
 }
 
 export default Notifications;

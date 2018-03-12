@@ -6,12 +6,6 @@
 
 import React, {Component} from 'react';
 import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-import {
   StackNavigator,
   TabNavigator,
   TabBarBottom,
@@ -23,9 +17,15 @@ import Gallery from "./Screens/Gallery/Gallery";
 import Notifications from "./Screens/Notifications/Notifications";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const App = TabNavigator({
+const HomeStack = StackNavigator({
   Home: {
     screen: Home,
+  },
+});
+
+const App = TabNavigator({
+  Home: {
+    screen: HomeStack,
   },
   Gallery: {
     screen: Gallery,

@@ -1,16 +1,19 @@
 import React, {
-    Component,
+  Component,
 } from 'react';
 import {
-    View,
+  View,
+  Text,
 } from 'react-native';
 
 class Profile extends Component {
-    render() {
-        return (
-            <View></View>
-        );
-    }
+  render() {
+    return (
+      <View>
+        <Text>{'Profile'}</Text>
+      </View>
+    );
+  }
 }
 
 export default Profile;
