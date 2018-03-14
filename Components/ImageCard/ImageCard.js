@@ -25,10 +25,14 @@ class ImageCard extends Component {
           location={this.props.location}
         />
 
-        <CardImage image={this.props.image}
+        <CardImage
+          image={this.props.image}
         />
 
         <CardFooter
+          likes={this.props.likes}
+          name={this.props.name}
+          caption={this.props.caption}
         />
 
       </View>
@@ -39,7 +43,7 @@ class ImageCard extends Component {
 const styles = StyleSheet.create({
   cardContainer: {
     flex: 1,
-    height: 400,
+    height: 450,
     marginVertical: 10,
   },
 });

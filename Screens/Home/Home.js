@@ -14,7 +14,7 @@ import newsFeed from "../../Data/newsFeed";
 class Home extends Component {
 
   static navigationOptions = {
-    headerTitle: <Logo title={'Home'}/>,
+    headerTitle: <Logo title={'Not Instagram'}/>,
     headerLeft: <LeftButton/>,
     headerRight: <RightButton/>,
   };
