@@ -27,14 +27,14 @@ const App = TabNavigator({
   Home: {
     screen: HomeStack,
   },
+  Search: {
+    screen: Search,
+  },
   Gallery: {
     screen: Gallery,
   },
   Notifications: {
     screen: Notifications,
-  },
-  Search: {
-    screen: Search,
   },
   Profile: {
     screen: Profile,
@@ -46,13 +46,13 @@ const App = TabNavigator({
       let iconName = 'ios-information-circle';
       switch(routeName) {
         case 'Home':
-          iconName = `ios-information-circle${focused ? '' : '-outline'}`;
+          iconName = `ios-home${focused ? '' : '-outline'}`;
           break;
         case 'Gallery':
-          iconName = `ios-images${focused ? '' : '-outline'}`;
+          iconName = `md-add-circle${focused ? '' : ''}`;
           break;
         case 'Notifications':
-          iconName = `ios-notifications${focused ? '' : '-outline'}`;
+          iconName = `ios-heart${focused ? '' : '-outline'}`;
           break;
         case 'Search':
           iconName = `ios-search${focused ? '' : '-outline'}`;
@@ -68,6 +68,7 @@ const App = TabNavigator({
   tabBarOptions: {
     activeTintColor: 'tomato',
     inactiveTintColor: 'gray',
+    showLabel: false,
   },
   tabBarComponent: TabBarBottom,
   tabBarPosition: 'bottom',
