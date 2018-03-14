@@ -16,10 +16,17 @@ import Search from "./Screens/Search/Search";
 import Gallery from "./Screens/Gallery/Gallery";
 import Notifications from "./Screens/Notifications/Notifications";
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Comments from "./Screens/Comments/Comments";
 
 const HomeStack = StackNavigator({
   Home: {
     screen: Home,
+  },
+  Comments: {
+    screen: Comments,
+    navigationOptions: {
+      tabBarVisible: false,
+    },
   },
 });
 

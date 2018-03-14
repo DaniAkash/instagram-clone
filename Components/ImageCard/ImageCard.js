@@ -14,8 +14,6 @@ class ImageCard extends Component {
 
   render() {
 
-    console.log(this.props);
-
     return (
       <View style={styles.cardContainer} elevation={2}>
 
@@ -34,6 +32,7 @@ class ImageCard extends Component {
           likes={this.props.likes}
           name={this.props.name}
           caption={this.props.caption}
+          navigateToComments={this.props.navigateToComments}
         />
 
       </View>
