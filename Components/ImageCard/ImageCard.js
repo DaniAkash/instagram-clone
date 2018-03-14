@@ -30,6 +30,7 @@ class ImageCard extends Component {
         />
 
         <CardFooter
+          commentsCount={this.props.comments.length}
           likes={this.props.likes}
           name={this.props.name}
           caption={this.props.caption}

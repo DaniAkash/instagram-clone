@@ -6,10 +6,11 @@ import {
   Image,
   Text,
   StyleSheet,
+  TouchableHighlight,
 } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const CardFooter = ({likes, name, caption}) => (
+const CardFooter = ({likes, name, caption, commentsCount}) => (
   <View style={styles.cardFooter}>
 
     <View style={styles.buttonRow}>
@@ -32,6 +33,12 @@ const CardFooter = ({likes, name, caption}) => (
         <Text style={{fontWeight: 'bold', fontSize: 14}}>{name}</Text>
         <Text style={{fontSize: 12}}>{caption}</Text>
       </View>
+      <TouchableHighlight
+        onClick={() => {}}
+        underlayColor={'transparent'}
+      >
+        <Text style={{fontSize: 12, color: 'grey'}}>{`View all ${commentsCount} Comments`}</Text>
+      </TouchableHighlight>
     </View>
 
   </View>
