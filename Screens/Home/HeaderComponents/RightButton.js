@@ -10,7 +10,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const RightButton = ({icon, action}) => {
   return (
-    <Ionicons style={{paddingRight: 15}} name={'ios-share-alt'} size={25} color={'tomato'} />
+    <Ionicons style={{paddingRight: 15}} name={'ios-send'} size={30} color={'tomato'} />
   )
 };
 
