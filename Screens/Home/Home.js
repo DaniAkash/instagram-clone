@@ -3,11 +3,14 @@ import React, {
 } from 'react';
 import {
   View,
+  ScrollView,
   Text,
 } from 'react-native';
 import Logo from "./HeaderComponents/Logo";
 import LeftButton from "./HeaderComponents/LeftButton";
 import RightButton from "./HeaderComponents/RightButton";
+import newsFeed from '../Data/newsFeed';
+import ImageCard from '../../Components/ImageCard/ImageCard';
 
 class Home extends Component {
 
@@ -19,9 +22,18 @@ class Home extends Component {
 
   render() {
     return (
-      <View>
-        <Text>{'Home'}</Text>
-      </View>
+      <ScrollView style={{backgroundColor: 'white'}}>
+        {
+          newsFeed.map((item, index) => {
+            return (
+              <ImageCard
+                key={index}
+                {...item}
+              />
+            )
+          })
+        }
+      </ScrollView>
     );
   }
 }
