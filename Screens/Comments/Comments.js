@@ -17,7 +17,7 @@ class Comments extends Component {
   render() {
     return (
       <View style={{flex: 1, backgroundColor: 'white'}}>
-        <ScrollView style={{flex: 1, backgroundColor: 'yellow'}}>
+        <ScrollView style={{backgroundColor: 'yellow'}}>
 
         </ScrollView>
         <View>

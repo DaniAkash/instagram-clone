@@ -33,12 +33,12 @@ const CardFooter = ({likes, name, caption, commentsCount, navigateToComments}) =
         <Text style={{fontWeight: 'bold', fontSize: 14}}>{name}</Text>
         <Text style={{fontSize: 12}}>{caption}</Text>
       </View>
-      {/*<TouchableHighlight
+      <TouchableHighlight
         onPress={navigateToComments}
         underlayColor={'transparent'}
       >
         <Text style={{fontSize: 12, color: 'grey'}}>{`View all ${commentsCount} Comments`}</Text>
-      </TouchableHighlight>*/}
+      </TouchableHighlight>
     </View>
 
   </View>

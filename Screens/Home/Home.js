@@ -20,6 +20,10 @@ class Home extends Component {
     headerRight: <RightButton/>,
   };
 
+  navigateToComments = () => {
+    this.props.navigation.navigate('Comments');
+  };
+
   render() {
     return (
       <ScrollView style={{backgroundColor: 'white'}}>
@@ -29,6 +33,7 @@ class Home extends Component {
               <ImageCard
                 key={index}
                 {...item}
+                navigateToComments={this.navigateToComments}
               />
             )
           })
